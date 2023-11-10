@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Quản Lý Nhân Viên</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body onload="renderListPersonnel()">
+        <div class="title">
+            <h2 style="border-bottom: black solid 0.1rem;">Quản Lý Nhân Viên</h2>
+        </div>
+        <div class="form-personnel">
+            <h1>Thông tin nhân viên</h1>
+            <label>Họ Và Tên</label>
+            <input type="text" id="fullname"/>
+            <span id="fullname-error" class="error"></span>
+            <br/>
+            <label>Msnv</label>
+            <input type="text" id="msnv"/>
+            <span id="msnv-error" class="error"></span>
+            <br/>
+            <label>Địa chỉ email</label>
+            <input type="text" id="email"/>
+            <span id="email-error" class="error"></span>
+            <br/>
+            <label>Số điện thoại</label>
+            <input type="text" id="phone"/>
+            <span id="phone-error" class="error"></span>
+            <br/>
+            <label>Địa chỉ</label>
+            <input type="text" id="address"/>
+            <span id="address-error" class="error"></span>
+            <br/>
+            <label>Giới Tính</label>
+            <input type="radio" name="gender" id="boymale" value="1"/> Nam
+            <input type="radio" name="gender" id="girlmale" value="2"/> Nữ
+            <span id="gender-error" class="error"></span>
+            <br/>
+
+            <label></label>
+            <br/>
+            <button onclick="save()">Add</button>
+        </div>
+        <div class="list-personnel" id="list-personnel">
+            <h1>Danh Sách Nhân viên</h1>
+            <form action="" id="search-box">
+                <input type="text" id="search-text"
+                placeholder="Search">
+                <button id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <table style="color: white; border: white solid 0.1rem; font-family: 'Times New Roman', Times, serif;" id="grid-personnels" width="650" border="1" cellpadding="0" cellspacing="0">           
+            </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+        <script src="./personnel.js"></script>
+    </body>
+</html>
