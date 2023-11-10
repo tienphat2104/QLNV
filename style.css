@@ -1,0 +1,104 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image:linear-gradient(135deg ,#FF6F61 -30%, #7850f0 100%);
+}
+div.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10px 20px; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+h2{
+    margin: 10px 20px;
+    color: white;
+}
+div.form-personnel , div.list-personnel{
+    width: 550px;
+    border: white solid 0.1rem;
+    margin: 25px;
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+}
+div.list-personnel{
+    width: 650px;
+}
+h1{
+    padding: 0px;
+    margin-top: 0px;
+    color: white;
+}
+div.form-personnel label{
+    width: 150px;
+    float: left;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+div.form-personnel input{
+    border-radius: 10px;
+}
+div.form-personnel input[type="text"]{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 10px
+}
+div.form-personnel button{
+    background-color:white;
+    border: none;
+    outline: none;
+    font-weight:300;
+    border-radius: 20px;
+    transition: 0.4s;
+    color: black;
+    font-size: 20px;
+    width: 150px;
+    height: 70;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+div.form-personnel button:hover{
+    background-color:orange;
+}
+.error{
+    color: white;
+    border-bottom: solid 0.1rem white;
+}
+div.list-personnel #search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 360px;
+}
+#search-box{
+    border-radius: 30px; 
+    background-color: white;
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background:none;
+    font-size: 18px; 
+    width: 0;
+    padding: 0;
+    transition: all 0.25s ease-in-out;
+} 
+#search-box:hover #search-text{
+    width: 300px;
+    padding: 10px 0px 10px 15px;
+}
+#search-btn{
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+ 
